@@ -24,23 +24,150 @@ body {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    margin: 0 5% 0 5%;
+    margin: 0 15% 0 15%;
 }
 
 .row {
-
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 .row-text {
     font-size: 14px;
-    font-weight: 550;
+}
+
+.row-infor ul {
+    display: flex; 
+    padding: 0;
+    margin: 0;
 }
 
 .row-infor ul li {
-    float: left;
     padding: 0px 22px;
     font-size: 14px;
     font-weight: 700;
     color: #848687;
     list-style: none;
+}
+
+/* .header-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 9;
+    position: relative;
+    background-color: #fff;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+} */
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 9;
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.wrapper-search {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-container input {
+    width: 530px;
+    padding: 10px 40px 10px 20px;
+    border: 1.5px solid #888;
+    border-radius: 5px;
+    height: 54px;
+    
+}
+
+.search-container i {
+    position: absolute;
+    right: -129px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    cursor: pointer;
+    padding: 12px;
+}
+
+.wrapper-decription {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.account-section ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.account-section ul li {
+    margin: 0 8px;
+}
+
+.account-section ul li a {
+    transition: color 0.3s ease;
+}
+
+.account-section ul li:hover a {
+    color: #46b8f1;
+}
+
+.account-section .title,
+.account-section ul li a {
+    color: #888;
+    text-decoration: none;
+}
+
+.navgation {
+    background-color: #0cafe5;
+    height: 52px;
+    width: 100%;
+    position: relative;
+}
+
+.nav-content {
+    position: absolute;
+    margin-left: 284px;
+}
+
+.nav-content ul li {
+    display: inline-block;
+}
+
+.nav-content ul li a {
+    text-decoration: none;
+    font-weight: 650;
+    color: #fff;
+    padding: 18px 22px;
+    line-height: 52px;
+    font-size: 14px;
+}
+
+.nav-content ul li a {
+    transition: background-color 0.3s ease;
+}
+
+.nav-content ul li:hover a {
+    background-color: #0796c5;
 }
