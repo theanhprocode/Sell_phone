@@ -51,25 +51,14 @@ body {
     list-style: none;
 }
 
-/* .header-wrapper {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    z-index: 9;
-    position: relative;
-    background-color: #fff;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-
-} */
-
 .header-wrapper {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    z-index: 9;
+    z-index: 1000;
     background-color: #fff;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -137,17 +126,19 @@ body {
 .account-section ul li a {
     color: #888;
     text-decoration: none;
+    font-size: 16px;
 }
 
 .navgation {
     background-color: #0cafe5;
     height: 52px;
     width: 100%;
-    position: relative;
+    top: 94px;
+    position: sticky;
+    z-index: 999;
 }
 
 .nav-content {
-    position: absolute;
     margin-left: 284px;
 }
 
@@ -170,4 +161,112 @@ body {
 
 .nav-content ul li:hover a {
     background-color: #0796c5;
+}
+
+/* slider */
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    overflow: hidden; 
+}
+
+.slider-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+}
+
+.slider-captions {
+    position: absolute;
+    top: 40%; 
+    left: 35%;
+    transform: translate(-50%, -50%); 
+    color: #000;
+    text-align: center;
+    z-index: 10;
+    text-align: left;
+    width: 486px;
+    bottom: 90px;
+}
+
+.slider-captions .btn {
+    padding: 18px 28px;
+    font-size: 1rem;
+    background-color: #0796c5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.slider-captions .btn:hover {
+    background-color: #046a91;
+}
+
+.slider-text {
+    margin-bottom: 48px;
+    font-size: 14px;
+}
+
+.brand-img {
+    margin-bottom: 20px;
+}
+
+.slider-title {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.slider-price {
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+/* for js */
+
+.item-slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+
+.item-slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.item-slider.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10; 
+    display: block;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }
