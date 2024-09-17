@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -354,6 +358,7 @@ hr {
     border: 0.3px solid #f3f2f2;
     width: 248px;
     text-align: center;
+    padding: 20px 0 20px 0;
 }
 
 .element-product img {
@@ -410,3 +415,138 @@ hr {
     background-color: #0cafe5;
     color: #fff;
 }
+
+
+/* BestSeller */
+
+.section-latest-products {
+    margin-top: 34px;
+    background-color: #fff;
+    margin: 34px 340px 0 340px;
+    margin-bottom: 34px;
+}
+
+.section-latest-products .section-title {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 16px;
+}
+
+hr {
+    border: 0.1px solid #f9f9f9;
+    margin-bottom: 36px;
+}
+
+.products-navigation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Căn giữa các nút điều hướng */
+}
+
+.products-wrapper {
+    display: flex;
+    overflow-x: hidden; /* Cho phép cuộn ngang */
+    scroll-behavior: smooth;
+    width: calc(100% - 80px); /* Để lại không gian cho các nút điều hướng */
+    margin: 0 auto; /* Căn giữa khung cuộn */
+    white-space: nowrap; /* Ngăn cách dòng mới */
+}
+
+.product-item {
+    flex: 0 0 auto;
+    border: 0.3px solid #f3f2f2;
+    width: 248px;
+    padding: 20px 0;
+    text-align: center;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.product-item img {
+    margin-bottom: 40px;
+}
+
+.product-item:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.1);
+}
+
+.product-name p {
+    display: inline;
+}
+
+.product-name:hover p {
+    color: #0796c5;
+}
+
+.product-price {
+    display: inline;
+}
+
+.product-price:hover s {
+    color: #0796c5;
+    text-decoration: none;
+}
+
+.product-icons {
+    font-size: 18px;
+}
+
+.product-icon-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    line-height: 1.2;
+    padding: 10px 7px;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.product-icon-btn:hover {
+    filter: brightness(85%);
+}
+
+.like-btn {
+    background-color: #fb730f;
+    color: #fff;
+}
+
+.cart-btn {
+    background-color: #0cafe5;
+    color: #fff;
+}
+
+.product-arrow {
+    font-size: 24px;
+    color: #000;
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Đảm bảo các nút điều hướng nằm trên cùng */
+}
+
+.product-arrow:hover {
+    background-color: #ccc;
+}
+
+.prev-second {
+    position: absolute;
+    left: -43px; /* Điều chỉnh vị trí của nút prev */
+}
+
+.next-second {
+    position: absolute;
+    right: -43px; /* Điều chỉnh vị trí của nút next */
+}
+
+
