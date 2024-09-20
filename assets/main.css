@@ -550,3 +550,57 @@ hr {
 }
 
 
+/* footer */
+
+.foot-content {
+    height: 240px;
+    background-color: #0cafe5;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 340px 0 340px;
+    align-items: flex-start; 
+    gap: 30px;
+    align-items: center;
+}
+
+.icon-text {
+    color: #fff;
+    max-width: 256px;
+    display: flex; 
+    align-items: flex-start;
+}
+
+.icon-text .icon-footer {
+    font-size: 18px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: #fff 1px solid;
+    padding-left: 16px;
+    padding-top: 10px;
+    margin-right: 15px; 
+}
+
+.icon-footer i {
+    margin-right: 20px;
+}
+
+.feature-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature-text h3, .feature-text p {
+    margin: 0;
+}
+
+.feature-text h3 {
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.feature-text p {
+    line-height: 30px;
+}
